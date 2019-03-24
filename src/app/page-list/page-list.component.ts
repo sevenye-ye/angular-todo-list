@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TrustedScriptString } from '@angular/core/src/sanitization/bypass';
 
 @Component({
   selector: 'app-page-list',
@@ -9,6 +10,7 @@ export class PageListComponent implements OnInit {
 
   public toDoShow: boolean;
   public toDoDoneShow: boolean;
+  public tryInit: any;
 
   constructor() { 
     this.toDoShow = true;
